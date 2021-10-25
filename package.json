@@ -1,0 +1,34 @@
+{
+  "name": "notion-md",
+  "version": "1.0.0",
+  "description": "Markdown as a first-class feature in Notion",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf ./dist && tsc --skipLibCheck",
+    "prepare": "yarn build",
+    "postpublish": "git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgeIpsum/notion-md.git"
+  },
+  "keywords": [
+    "notion",
+    "markdown",
+    "md"
+  ],
+  "author": "Ibrahim Saberi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GeorgeIpsum/notion-md/issues"
+  },
+  "homepage": "https://github.com/GeorgeIpsum/notion-md#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.5",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@notionhq/client": "^0.4.4"
+  }
+}
